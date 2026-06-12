@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Grind</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">DSA<span>/</span>Grind</div>
+
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span>Overall Progress</span>
+        <span><strong id="done-count">0</strong> / <strong id="total-count">0</strong> solved</span>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="global-fill"></div>
+      </div>
+    </div>
+
+    <div class="diff-pills">
+      <div class="diff-pill easy" id="pill-easy">E: 0/0</div>
+      <div class="diff-pill med" id="pill-med">M: 0/0</div>
+      <div class="diff-pill hard" id="pill-hard">H: 0/0</div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <input class="search-box" type="text" id="search" placeholder="Search questions...">
+
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="todo">To Do</button>
+  <button class="filter-btn" data-filter="done">Done</button>
+  <button class="filter-btn" data-filter="Easy">Easy</button>
+  <button class="filter-btn" data-filter="Medium">Medium</button>
+  <button class="filter-btn" data-filter="Hard">Hard</button>
+
+  <button class="reset-btn" id="reset-btn">Reset All</button>
+</div>
+<div class="controls" style="margin-top:10px;">
+  <button class="filter-btn active" id="basic-mode">
+    Basic Roadmap
+  </button>
+
+  <button class="filter-btn" id="advanced-mode">
+    Advanced Roadmap
+  </button>
+</div>
+
+<div class="main" id="main-container"></div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
